@@ -1,11 +1,11 @@
 const admin = require('firebase-admin');
-const serviceAccount = require('./flutter-movie-8a79d-firebase-adminsdk-8vl4z-99b56d193e.json');
+const serviceAccount = require('./orbis2-d7481-firebase-adminsdk-weqc2-d9b6482e29.json');
 admin.initializeApp({
     credential: admin.credential.cert(serviceAccount)
 });
 const db = admin.firestore();
 const auth = admin.auth();
-const bucket = admin.storage().bucket('gs://flutter-movie-8a79d.appspot.com');
+const bucket = admin.storage().bucket('gs://orbis2-d7481.appspot.com');
 
 module.exports = { db, auth,bucket};
 
