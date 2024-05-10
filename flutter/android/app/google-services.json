@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "661579504273",
+    "project_id": "orbis2-d7481",
+    "storage_bucket": "orbis2-d7481.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:661579504273:android:4434116dd5350c65c8bd30",
+        "android_client_info": {
+          "package_name": "com.example.flutter_movie"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "661579504273-8q8khoa1sovf121eiohl3vlgn9tkkfpu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCJlmDqmcn7-nbrbCX6OMNrSsRjklSDCsI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "661579504273-8q8khoa1sovf121eiohl3vlgn9tkkfpu.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "661579504273-pkgaq7h58ltmrj1e502h48vg4i6qet3r.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.untitled"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
