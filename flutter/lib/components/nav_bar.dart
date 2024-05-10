@@ -15,7 +15,7 @@ class NavBar extends StatelessWidget {
         children: <Widget>[
           Container(
             width: double.infinity,
-            height: 200,
+            height: 160,
             color: const Color.fromRGBO(0, 0, 0, 1.0),
             child: Center(
               child: Column(
@@ -44,15 +44,15 @@ class NavBar extends StatelessWidget {
           ),
           ListTile(
             leading: const Icon(Icons.home),
-            title: const Text('Home'),
+            title: const Text(''),
             onTap: () {
               Navigator.push(context,
                   MaterialPageRoute(builder: (context) => const MyApp()));
             },
           ),
           ListTile(
-            leading: const Icon(Icons.movie),
-            title: const Text('Stuff members'),
+            leading: const Icon(Icons.bar_chart),
+            title: const Text('Stuff'),
             onTap: () {
               Navigator.push(
                   context,
@@ -62,8 +62,8 @@ class NavBar extends StatelessWidget {
             },
           ),
           ListTile(
-            leading: const Icon(Icons.movie),
-            title: const Text('Personalities'),
+            leading: const Icon(Icons.people),
+            title: const Text('Cast'),
             onTap: () {
               Navigator.push(
                   context,
@@ -72,7 +72,7 @@ class NavBar extends StatelessWidget {
             },
           ),
           ListTile(
-            leading: const Icon(Icons.tv),
+            leading: const Icon(Icons.book),
             title: const Text('News'),
             onTap: () {
               Navigator.push(context,
