@@ -5,8 +5,8 @@ const logger = require('../logger/logger.config');
 
 const createActor = async (req, res) => {
     try {
-        const {name,role,age,image,awards,films,biography} = req.body;
-        const actorId = await actorService.createActor(name,role,age,image,awards,films,biography);
+        const {name,role,age,image,awards,movies,biography} = req.body;
+        const actorId = await actorService.createActor(name,role,age,image,awards,movies,biography);
         res.send(Response.success(actorId))
     } catch (error) {
         res.send(Response.error(error.message));
@@ -35,9 +35,9 @@ const getAllActors = async (req, res) => {
 
 const updateActor = async (req, res) => {
     try {
-        const {name,role,age,image,awards,films,biography} = req.body;
+        const {name,role,age,image,awards,movies,biography} = req.body;
         const actorId = req.params.id;
-        await actorService.updateActor(actorId, name,role,age,image,awards,films,biography);
+        await actorService.updateActor(actorId, name,role,age,image,awards,movies,biography);
         res.send(Response.success());
     } catch (error) {
         res.send(Response.error(error.message));
