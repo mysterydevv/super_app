@@ -16,7 +16,7 @@ class NavBar extends StatelessWidget {
           Container(
             width: double.infinity,
             height: 200,
-            color: const Color.fromRGBO(58, 63, 71, 1.0),
+            color: const Color.fromRGBO(0, 0, 0, 1.0),
             child: Center(
               child: Column(
                 children: [
@@ -31,7 +31,7 @@ class NavBar extends StatelessWidget {
                   Container(
                     margin: const EdgeInsets.only(top: 10),
                     child: const Text(
-                      'Movie App',
+                      '',
                       style: TextStyle(
                         color: Colors.white,
                         fontSize: 20,
