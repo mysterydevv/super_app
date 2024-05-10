@@ -25,8 +25,8 @@ class CinemaMainInfo extends StatelessWidget {
           onPressed: () {},
           style: ElevatedButton.styleFrom(
             backgroundColor: Colors.redAccent,
-            shape: RoundedRectangleBorder( // Set the button shape to square
-              borderRadius: BorderRadius.circular(0),
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(0), // Square button shape
             ),
           ),
           child: Text(
@@ -43,6 +43,7 @@ class CinemaMainInfo extends StatelessWidget {
     );
   }
 
+  // Widget for building each info item
   Widget _buildInfoItem(IconData icon, String text) {
     return Column(
       children: [
@@ -60,6 +61,7 @@ class CinemaMainInfo extends StatelessWidget {
             fontWeight: FontWeight.bold,
           ),
         ),
+        
       ],
     );
   }

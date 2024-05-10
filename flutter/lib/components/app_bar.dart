@@ -10,7 +10,7 @@ class OwnAppBar extends StatelessWidget {
 
     return Container(
       width: width,
-      height: height * 0.15,
+      height: height * 0.125,
       color: const Color.fromRGBO(0, 0, 0, 1.0),
       child: Center(
         child: Row(
