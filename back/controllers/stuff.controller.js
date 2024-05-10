@@ -31,8 +31,8 @@ const createStuffMember = async (req, res) => {
 
 const updateStuffMember = async (req, res) => {
     try {
-        const { id, name, activity, image } = req.body;
-        await stuffService.updateStuffMember(id, name, activity, image);
+        const { id, name, activity, image, biography } = req.body;
+        await stuffService.updateStuffMember(id, name, activity, image,biography);
         res.send(Response.success(null));
     } catch (error) {
         res.send(Response.error(error.message));

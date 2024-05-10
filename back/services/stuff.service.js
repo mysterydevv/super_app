@@ -27,12 +27,14 @@ const createStuffMember = async (name,activity,image, biography) =>{
     return ref.id;
 }
 
-const updateStuffMember = async (id,name,activity,image) =>{
+const updateStuffMember = async (id,name,activity,image,biography) =>{
     const newStuff = {
         name: name,
         activity: activity,
-        image: image
+        image: image,
+        biography: biography
     }
+    logger.info('Updating stuff member with id: ' + id);
     await stuffTable.doc(id).update(newStuff);
 }
 
